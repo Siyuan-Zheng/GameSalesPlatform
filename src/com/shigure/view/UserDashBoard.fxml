@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="808.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.UserDashBoardController">
+   <children>
+      <AnchorPane stylesheets="@../resources/Theme.css">
+         <children>
+            <BorderPane prefHeight="520.0" prefWidth="808.0" stylesheets="@../resources/Theme.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+                    <menus>
+                      <Menu fx:id="menu_system" mnemonicParsing="false" text="系统">
+                        <items>
+                          <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
+                              <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="menu_view" mnemonicParsing="false" text="视图">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="menu_friends" mnemonicParsing="false" text="好友">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                        <Menu fx:id="menu_game" mnemonicParsing="false" text="游戏">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                        <Menu fx:id="menu_about" mnemonicParsing="false" text="关于">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                    </menus>
+                  </MenuBar>
+               </top>
+               <center>
+                  <AnchorPane stylesheets="@../resources/Theme.css">
+                     <children>
+                        <JFXTabPane fx:id="tabPane" prefHeight="491.0" prefWidth="808.0" stylesheets="@../resources/Theme.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                           <tabs>
+                              <Tab fx:id="tab_shop" text="商店">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <BorderPane prefHeight="432.0" prefWidth="808.0" stylesheets="@../resources/Theme.css" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <left>
+                                                <JFXDrawer fx:id="shop_drawer" defaultDrawerSize="130.0" overLayVisible="false" prefHeight="570.0" prefWidth="0.0" resizeContent="true" BorderPane.alignment="CENTER" />
+                                             </left>
+                                             <center>
+                                                <AnchorPane prefHeight="497.0" prefWidth="808.0" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <JFXHamburger fx:id="shop_hamburger" styleClass="jfx-hamburger-icon" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="tab_library" text="库">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <BorderPane layoutX="130.0" prefHeight="495.0" prefWidth="790.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <left>
+                                                <JFXDrawer fx:id="library_drawer" defaultDrawerSize="130.0" prefHeight="466.0" prefWidth="0.0" resizeContent="true" BorderPane.alignment="CENTER" />
+                                             </left></BorderPane>
+                                          <JFXHamburger fx:id="library_hamburger" styleClass="jfx-hamburger-icon" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content></Tab>
+                              <Tab fx:id="tab_userName" text="userName">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <BorderPane prefHeight="466.0" prefWidth="990.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <left>
+                                                <JFXDrawer fx:id="userName_drawer" defaultDrawerSize="130.0" prefHeight="466.0" prefWidth="0.0" resizeContent="true" BorderPane.alignment="CENTER" />
+                                             </left>
+                                          </BorderPane>
+                                          <JFXHamburger fx:id="userName_hamburger" styleClass="jfx-hamburger-icon" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                           </tabs>
+                        </JFXTabPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

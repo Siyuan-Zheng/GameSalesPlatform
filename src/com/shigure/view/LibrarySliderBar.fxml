@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="100.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.LibrarySliderBarController">
+   <children>
+      <JFXButton fx:id="butt_game" buttonType="RAISED" contentDisplay="TOP" onAction="#click_game" onMouseEntered="#gameEnter" onMouseExited="#gameExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="游戏">
+         <graphic>
+            <ImageView fx:id="img_game" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/game.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="butt_calendar" buttonType="RAISED" contentDisplay="TOP" onAction="#click_calendar" onMouseEntered="#calendarEnter" onMouseExited="#calendarExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="最近购买">
+         <graphic>
+            <ImageView fx:id="img_calendar" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/calendar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="butt_star" buttonType="RAISED" contentDisplay="TOP" onAction="#click_star" onMouseEntered="#starEnter" onMouseExited="#starExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="收藏夹">
+         <graphic>
+            <ImageView fx:id="img_star" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/star.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="butt_cast" contentDisplay="TOP" onAction="#click_cast" onMouseEntered="#castEnter" onMouseExited="#castExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="购物车">
+         <graphic>
+            <ImageView fx:id="img_cast" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="513.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.UserSelfManageController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTabPane>
+               <tabs>
+                  <Tab text="个人信息">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXTextField fx:id="mailField" layoutX="98.0" layoutY="67.0" prefHeight="27.0" prefWidth="251.0" promptText="邮箱地址" />
+                              <JFXTextField fx:id="phoneNumField" layoutX="95.0" layoutY="150.0" prefHeight="27.0" prefWidth="251.0" promptText="手机号码" />
+                              <JFXButton fx:id="upLoadImgButton" layoutX="98.0" layoutY="226.0" onAction="#click_upLoadImgButton" styleClass="login-button" text="上传头像" />
+                              <ImageView fx:id="imgLookUp" fitHeight="68.0" fitWidth="92.0" layoutX="257.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="changeButton" layoutX="406.0" layoutY="277.0" mnemonicParsing="false" onAction="#click_changeButton" styleClass="login-button" text="更改信息" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="修改密码">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXPasswordField fx:id="passwordField" layoutX="136.0" layoutY="59.0" prefHeight="27.0" prefWidth="242.0" promptText="输入密码" />
+                              <JFXPasswordField fx:id="rePasswordField" layoutX="136.0" layoutY="157.0" prefHeight="27.0" prefWidth="242.0" promptText="确认密码" />
+                              <Button fx:id="passwordChangeButton" layoutX="378.0" layoutY="280.0" mnemonicParsing="false" onAction="#click_passwordChangeButton" styleClass="login-button" text="修改密码" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

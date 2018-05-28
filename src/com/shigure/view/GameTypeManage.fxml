@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.GameTypeManageController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTabPane>
+               <tabs>
+                  <Tab text="游戏类型添加">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXTextField fx:id="add_gameTypeField" layoutX="146.0" layoutY="126.0" promptText="游戏类型名称" />
+                              <JFXButton fx:id="add_button" layoutX="390.0" layoutY="255.0" onAction="#click_addButton" styleClass="login-button" text="添加" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="游戏类型管理">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="131.0" layoutY="111.0" prefHeight="368.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <left>
+                                    <JFXListView fx:id="change_listView" prefHeight="368.0" prefWidth="137.0" styleClass="jfx-list-view" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <center>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXTextField fx:id="change_gameTypeField" layoutX="100.0" layoutY="138.0" promptText="游戏类型名称" />
+                                          <JFXButton fx:id="change_button" layoutX="304.0" layoutY="273.0" onAction="#click_changeButton" styleClass="login-button" text="修改" />
+                                          <JFXButton fx:id="change_deleteButton" layoutX="227.0" layoutY="274.0" onAction="#click_deleteButton" styleClass="login-button" text="删除" />
+                                       </children>
+                                    </AnchorPane>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

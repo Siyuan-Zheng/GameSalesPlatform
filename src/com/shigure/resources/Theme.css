@@ -1,0 +1,146 @@
+*{
+    -fx-primary-color: #24262B;
+    -fx-accent-color: #FFFF8D;
+    -fx-button-accent-color: #DEDE76;
+    -fx-light-accent-color: #FFFFC4;
+    -fx-text-color: #BFBFBF;
+    -fx-wrong-color: #FF0000;
+    -fx-striking-color: #FFFFFF;
+}
+
+.root{
+    -fx-background-color: -fx-primary-color;
+}
+
+.button{
+    -fx-text-fill: -fx-text-color;
+    -fx-background-color: -fx-primary-color;
+}
+
+.login-button{
+    -fx-border-color: -fx-accent-color;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.login-button:hover{
+    -fx-border-color: -fx-accent-color;
+    -fx-background-color: -fx-accent-color;
+    -fx-text-fill: -fx-primary-color;
+}
+
+.text-field{
+    -fx-text-fill: -fx-text-color;
+    -fx-font-size: 12pt;
+    -jfx-focus-color: -fx-accent-color;
+    -jfx-unfocus-color: -fx-striking-color;
+}
+
+.wrong-passport{
+    -jfx-focus-color: -fx-wrong-color;
+    -jfx-unfocus-color: -fx-wrong-color;
+}
+
+.jfx-text-field:error, .jfx-password-field:error, .jfx-text-area:error {
+    -jfx-focus-color: -fx-wrong-color;
+    -fx-font-size: 12pt;
+    -jfx-unfocus-color: -fx-wrong-color;
+}
+
+.tab{
+    -fx-background-color: -fx-primary-color;
+    -fx-pref-width: 250;
+    -fx-pref-height: 60;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary-color;
+}
+
+.menu-bar{
+    -fx-base: -fx-primary-color;
+    -fx-background-color: -fx-primary-color;
+}
+
+.context-menu{
+    -fx-background-color: derive(-fx-primary-color, 15%);
+
+}
+
+.jfx-hamburger-icon{
+    -fx-spacing: 7;
+}
+
+.jfx-hamburger-icon StackPane{
+    -fx-background-color: -fx-accent-color;
+    -fx-background-radius: 5px;
+}
+
+.toolbar-button{
+    -fx-background-color: derive(-fx-primary-color, 15%);
+}
+
+.toolbar-button:hover{
+    -fx-background-color: -fx-button-accent-color;
+    -fx-text-fill: -fx-primary-color;
+}
+
+
+.jfx-list-view{
+    -fx-background-color: derive(-fx-primary-color, 1%);
+    -fx-background-insets: 2;
+    -jfx-cell-vertical-margin: 100px;
+    -jfx-cell-horizontal-margin: 10px;
+    -jfx-vertical-gap: 10px;
+    -fx-text-fill: -fx-text-color;
+    -fx-pref-width: 200;
+    -fx-border-color: derive(-fx-primary-color, 15%);
+}
+
+.jfx-list-cell{
+    -fx-background-color: derive(-fx-primary-color, 15%);
+    -fx-background-insets: 1.5;
+    -fx-text-fill: -fx-text-color;
+
+}
+
+.jfx-list-cell:selected{
+    -fx-background-color: derive(-fx-primary-color, 50%);
+    -fx-text-fill: -fx-text-color;
+}
+
+.jfx-list-cell .jfx-rippler{
+    -jfx-rippler-fill: -fx-accent-color;
+}
+
+.jfx-text-area{
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: -fx-text-color;
+    -jfx-unfocus-color: -fx-striking-color;
+    -jfx-focus-color: -fx-accent-color;
+    -fx-font-size: 25;
+}
+
+.jfx-toggle-button{
+    -jfx-toggle-color: -fx-accent-color;
+    -jfx-toggle-line-color: -fx-light-accent-color;
+    -fx-text-fill: -fx-text-color;
+    -jfx-size: 8px;
+    -fx-content-display: RIGHT;
+}
+
+.jfx-combo-box{
+    -jfx-unfocus-color: -fx-striking-color;
+    -jfx-focus-color: -fx-accent-color;
+}
+
+.jfx-date-picker{
+    -jfx-default-color: derive(-fx-primary-color, 60%);
+}
+
+.jfx-combo-box{
+    -fx-text-fill: -fx-text-color;
+    -jfx-label-float: true;
+    -fx-font-size: 15px;
+    -fx-background-color: #858585;
+}

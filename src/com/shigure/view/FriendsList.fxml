@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="559.0" prefWidth="293.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.FriendsListController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="559.0" prefWidth="247.0">
+               <children>
+                  <JFXListView fx:id="friendsList" prefHeight="598.0" prefWidth="293.0" styleClass="jfx-list-view" />
+                  <HBox prefHeight="136.0" prefWidth="293.0">
+                     <children>
+                        <JFXButton fx:id="addFriendsButton" buttonType="RAISED" onAction="#click_addFriendsButton" styleClass="login-button" text="添加好友">
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="deleteFriendsButton" onAction="#click_deleteFriendsButton" styleClass="login-button" text="删除好友">
+                           <HBox.margin>
+                              <Insets left="60.0" top="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

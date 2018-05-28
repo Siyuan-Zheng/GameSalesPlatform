@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="100.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.UserNameSliderBarController">
+   <children>
+      <JFXButton fx:id="butt_user" buttonType="RAISED" contentDisplay="TOP" onAction="#click_user" onMouseEntered="#userEnter" onMouseExited="#userExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="个人资料" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_user" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="butt_friends" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#click_friends" onMouseEntered="#friendsEnter" onMouseExited="#friendsUpExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="好友">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_friends" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/friends.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="butt_orderList" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#click_orderList" onMouseEntered="#orderListEnter" onMouseExited="#orderListExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="账户明细">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_orderList" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/list.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="butt_logout" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#click_logout" onMouseEntered="#logoutEnter" onMouseExited="#logoutExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="更改用户">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_logout" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

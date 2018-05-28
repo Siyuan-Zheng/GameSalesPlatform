@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="100.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.UserManagerSliderBarController">
+   <children>
+      <JFXButton fx:id="butt_userManager" buttonType="RAISED" contentDisplay="TOP" onAction="#click_userManager" onMouseEntered="#userManagerEnter" onMouseExited="#userManagerExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="用户信息">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_userManager" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/setting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="butt_orderListManager" buttonType="RAISED" contentDisplay="TOP" onAction="#click_orderListManager" onMouseEntered="#orderListManagerEnter" onMouseExited="#orderListManagerExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="订单管理">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_orderListManager" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/setting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

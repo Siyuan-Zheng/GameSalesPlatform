@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="100.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.ShopSliderBarController">
+   <children>
+      <JFXButton fx:id="butt_best" buttonType="RAISED" contentDisplay="TOP" onAction="#click_bestButton" onMouseEntered="#bestEnter" onMouseExited="#bestExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="精选" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="img_best" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/great.png" />
+               </image></ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butt_lockup" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#click_lookUpButton" onMouseEntered="#lookUpEnter" onMouseExited="#lookUpExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="浏览">
+         <graphic>
+            <ImageView fx:id="img_lookup" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/shop.png" />
+               </image></ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butt_wishList" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#click_wishListButton" onMouseEntered="#wishListEnter" onMouseExited="#wishListExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="愿望单">
+         <graphic>
+            <ImageView fx:id="img_wishList" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/love.png" />
+               </image></ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butt_anliz" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#click_anlizButton" onMouseEntered="#anlizEnter" onMouseExited="#anlizExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="统计">
+         <graphic>
+            <ImageView fx:id="img_anliz" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/anlis.png" />
+               </image></ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

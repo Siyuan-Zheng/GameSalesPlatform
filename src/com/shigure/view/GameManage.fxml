@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="507.0" prefWidth="868.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.GameManageController">
+   <children>
+      <StackPane prefHeight="507.0" prefWidth="868.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTabPane>
+               <tabs>
+                  <Tab text="游戏添加">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXTextField fx:id="add_gameNameField" labelFloat="true" layoutX="108.0" layoutY="52.0" prefWidth="205.0" promptText="游戏名称" />
+                              <JFXTextField fx:id="add_gamePrice" labelFloat="true" layoutX="427.0" layoutY="52.0" prefHeight="27.0" prefWidth="205.0" promptText="游戏价格" />
+                              <JFXComboBox fx:id="add_gameType" labelFloat="true" layoutX="427.0" layoutY="153.0" prefHeight="27.0" prefWidth="134.0" promptText="游戏类型" />
+                              <JFXDatePicker fx:id="add_datePicker" layoutX="109.0" layoutY="352.0" prefWidth="171.0" promptText="发行日期" />
+                              <JFXButton fx:id="add_uploadImg" buttonType="RAISED" layoutX="108.0" layoutY="268.0" onAction="#click_addUploadImgButton" styleClass="login-button" text="上传图像" />
+                              <ImageView fx:id="add_imgView" fitHeight="97.0" fitWidth="123.0" layoutX="194.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" />
+                              <JFXTextArea fx:id="add_gameDescTxt" labelFloat="true" layoutX="348.0" layoutY="245.0" prefHeight="162.0" prefWidth="495.0" promptText="游戏描述" style="-fx-font-size: 18;" styleClass="jfx-text-area" />
+                              <JFXButton fx:id="addButton" buttonType="RAISED" layoutX="632.0" layoutY="156.0" onAction="#click_addButton" styleClass="login-button" text="添加游戏" />
+                              <JFXComboBox fx:id="add_pressName" labelFloat="true" layoutX="108.0" layoutY="157.0" prefHeight="27.0" prefWidth="211.0" promptText="游戏发行商" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="游戏信息修改">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="447.0" prefWidth="868.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <AnchorPane BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton fx:id="change_uploadImg" buttonType="RAISED" layoutX="15.0" layoutY="241.0" onAction="#click_changeUploadImgButton" styleClass="login-button" text="上传图像" />
+                                          <ImageView fx:id="change_imgView" fitHeight="83.0" fitWidth="116.0" layoutX="101.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" />
+                                          <JFXDatePicker fx:id="change_datePicker" layoutX="16.0" layoutY="328.0" prefWidth="171.0" promptText="发行日期" />
+                                          <JFXTextArea fx:id="change_gameDesc" labelFloat="true" layoutX="250.0" layoutY="256.0" prefHeight="166.0" prefWidth="396.0" promptText="游戏描述" style="-fx-font-size: 18;" styleClass="jfx-text-area">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </JFXTextArea>
+                                          <JFXTextField fx:id="change_gameDiscountNum" labelFloat="true" layoutX="493.0" layoutY="43.0" prefHeight="34.0" prefWidth="106.0" promptText="游戏折扣" />
+                                          <JFXTextField fx:id="change_gameName" labelFloat="true" layoutX="16.0" layoutY="44.0" prefWidth="205.0" promptText="游戏名称" />
+                                          <JFXTextField fx:id="change_gamePrice" labelFloat="true" layoutX="335.0" layoutY="43.0" prefHeight="34.0" prefWidth="102.0" promptText="游戏价格" />
+                                          <JFXComboBox fx:id="change_pressName" labelFloat="true" layoutX="15.0" layoutY="159.0" prefHeight="27.0" prefWidth="206.0" promptText="游戏发行商" />
+                                          <JFXComboBox fx:id="change_gameType" labelFloat="true" layoutX="335.0" layoutY="154.0" prefHeight="34.0" prefWidth="101.0" promptText="游戏类型" />
+                                          <JFXButton fx:id="gameChangeButton" buttonType="RAISED" layoutX="510.0" layoutY="158.0" onAction="#click_changeButton" styleClass="login-button" text="游戏修改" />
+                                       </children>
+                                    </AnchorPane>
+                                 </center>
+                                 <left>
+                                    <JFXListView fx:id="change_listView" BorderPane.alignment="CENTER" />
+                                 </left>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

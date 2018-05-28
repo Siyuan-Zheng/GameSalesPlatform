@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="100.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.GameManagerSliderBarController">
+   <children>
+      <JFXButton fx:id="butt_game" buttonType="RAISED" contentDisplay="TOP" onAction="#clickGame" onMouseEntered="#gameManagerEnter" onMouseExited="#gameManagerExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="游戏" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_gameManager" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/setting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="butt_gameType" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#clickGameType" onMouseEntered="#gameTypeManagerEnter" onMouseExited="#gameTypeManagerExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="游戏类型">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_gameType" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/setting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="butt_gamePress" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#clickGamePress" onMouseEntered="#gamePressManagerEnter" onMouseExited="#gamePressManagerExit" prefHeight="500.0" prefWidth="500.0" styleClass="toolbar-button" text="发行商">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img_gamePress" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../material/setting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

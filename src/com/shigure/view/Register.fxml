@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="672.0" prefWidth="400.0" styleClass="root" stylesheets="@../resources/Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shigure.controller.RegisterController">
+   <children>
+      <StackPane prefHeight="672.0" prefWidth="400.0" styleClass="root" stylesheets="@../resources/Theme.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="550.0" prefWidth="400.0" styleClass="root" stylesheets="@../resources/Theme.css">
+               <children>
+                  <JFXTextField fx:id="field_mail" labelFloat="true" layoutX="127.0" layoutY="529.0" prefHeight="27.0" prefWidth="204.0" promptText="电子邮箱" styleClass="text-field" />
+                  <JFXTextField fx:id="field_phoneNum" labelFloat="true" layoutX="127.0" layoutY="455.0" prefHeight="27.0" prefWidth="204.0" promptText="手机号码" styleClass="text-field" />
+                  <JFXTextField fx:id="field_userName" labelFloat="true" layoutX="122.0" layoutY="150.0" prefHeight="27.0" prefWidth="204.0" promptText="用户名" styleClass="text-field" />
+                  <JFXPasswordField fx:id="field_password" labelFloat="true" layoutX="122.0" layoutY="232.0" prefHeight="27.0" prefWidth="204.0" promptText="密码" styleClass="text-field" />
+                  <JFXPasswordField fx:id="field_rePassword" labelFloat="true" layoutX="122.0" layoutY="316.0" prefHeight="27.0" prefWidth="204.0" promptText="确认密码" styleClass="text-field" />
+                  <JFXButton fx:id="butt_uploadImg" buttonType="RAISED" layoutX="126.0" layoutY="384.0" onAction="#uploadImg" styleClass="login-button" text="上传头像" />
+                  <JFXButton fx:id="butt_register" buttonType="RAISED" layoutX="260.0" layoutY="609.0" onAction="#register" prefHeight="29.0" prefWidth="56.0" styleClass="login-button" text="注册" />
+                  <JFXButton fx:id="butt_reset" buttonType="RAISED" layoutX="98.0" layoutY="609.0" onAction="#reset" prefHeight="29.0" prefWidth="56.0" styleClass="login-button" text="重置" />
+                  <ImageView fx:id="img_user" fitHeight="40.0" fitWidth="40.0" layoutX="72.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../material/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_add" fitHeight="60.0" fitWidth="60.0" layoutX="162.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../material/add.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_lock" fitHeight="40.0" fitWidth="40.0" layoutX="72.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../material/lock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_conf" fitHeight="79.0" fitWidth="40.0" layoutX="72.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../material/conf.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_phone" fitHeight="77.0" fitWidth="40.0" layoutX="72.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../material/phone.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_upImg" fitHeight="60.0" fitWidth="40.0" layoutX="72.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../material/img.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_mail" fitHeight="60.0" fitWidth="40.0" layoutX="72.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../material/mail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_lookUp" fitHeight="60.0" fitWidth="72.0" layoutX="224.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
